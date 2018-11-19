@@ -1,0 +1,731 @@
+
+/* -------------------- ? --------------------*/
+.banner-bottom{
+	padding:0 0;
+	margin-top: 2em;
+}
+.banner-bottom h3{
+	font-size:1.5em;
+	color:#212121;
+}
+/*--------------------? --------------------- */
+
+/*-------------------- início body --------------------*/
+body{
+	margin:0;
+	font-family:'Hero', 'Open Sans', sans-serif;
+	background: #fff;
+    background-size: cover;
+}
+body a:hover{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0; 
+
+}
+p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+p,ul li,ol li{
+	font-size:14px;
+}
+/*-------------------- fim body ----------------------*/
+
+/*------------- início botão ir ao topo ----------------*/
+#toTop {
+	outline:none;
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 3%;
+    overflow: hidden;
+    z-index: 999;
+    width: 28px;
+    height: 30px;
+    border: 0px solid #ff0000;
+    text-indent: 100%;
+    background: url(../images/topo.svg) no-repeat 0px 0px;   /*-- seta ir ao topo --*/
+}
+#toTopHover {
+    width: 28px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/*--------------------- fim botão ir ao topo ---------------------*/
+
+/*-------------------- início menu -------------------*/
+.navbar {
+	float:left;
+	background-color:#eff9de;  /*#ededed;      b50a06*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em 0em 0.4em 0em;
+	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+	margin-bottom: 0;
+	border-top: 2px solid #f44336;
+	border-radius: 0px;
+}
+.noscroll {
+  position: fixed;
+  right: 0;
+
+  overflow: hidden;
+}
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 30;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.mobile-side-menu {
+	width: 240px;
+	display: none;
+	background-color: #1b1b1b;
+	bottom: 0px;
+	z-index: 30;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	/* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+.mobile-side-menu i {
+	width:20px;
+}
+.mobile-side-menu ul {
+	float: none;
+	display: inline-block;
+	margin: auto;
+	width: 100%;
+	background-color: #1b1b1b;
+	border-radius: 0px;
+	list-style: none;
+}
+.mobile-side-menu ul > li {
+	text-align: left;
+}
+.mobile-side-menu ul > li > a {
+	text-transform: uppercase;
+    text-decoration: none;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    color: white;
+    padding:1em 1em;
+    font-weight: 600;
+    border-bottom: solid 1px #3f3f3f;
+	font-family: 'Open Sans', sans-serif;
+}
+.mobile-side-menu ul > li > a:hover,.mobile-side-menu ul > li.active > a{
+	background:#eff9de;
+	color:#212121;
+}
+.mobile-side-menu ul > li.active > a i,.mobile-side-menu ul > li > a:hover i{
+	color:#11931d;
+}
+.mobile-side-menu ul > li > a > i {
+    padding-right: 1em;
+    color: #ffff00;
+}
+.mobile-side-menu ul > li:first-child{
+	padding-top:1em;
+}
+.agile_container{
+	padding:.5em 2em;
+}
+.w3_agile_nav_main_left{
+	float:left;
+}
+.toggleMenu {
+    background: #1f5404;
+    border: 2.5px solid #1f5404;
+    padding: 5px 30px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+}
+.toggleMenu a{
+	outline:none;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:14px;
+	text-decoration:none;
+	font-family: 'Open Sans', sans-serif;
+}
+.w3_agile_nav_main_right{
+	float:right;
+	margin-top:-10px;
+	z-index: 999;
+}
+
+/*---------- RESPONSIVO ----------*/
+
+@media (max-width:736px){
+		.mobile-side-menu i {
+	width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+	padding: 0.7em 1.5em;
+	}	
+}
+
+@media (max-width:667px){ 
+	.mobile-side-menu i {
+		width:20px;
+	}	
+	.mobile-side-menu ul > li > a {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 640px){
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 1em 1em;
+	}
+	.mobile-side-menu ul > li:first-child {
+		padding-top: 1.3em;
+	}
+	.w3_agile_nav_main_right {
+		margin-top: -10px;
+	}
+}
+/* 
+tablet
+Samsung Galaxy Tab (600 x 1024), 
+BlackBerry PlayBook (600 x 1024),
+Amazon Kindle Fire (600 x 800) 
+*/
+@media (max-width: 600px){
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 1em 1em;
+	}	
+}
+
+@media (max-width: 568px){
+	.mobile-side-menu {
+		width: 240px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 2em;
+	}	
+}
+/* 
+celulares
+Sony Xperia Sola, U (480 x 854)
+3.5" Apple iPhone 3GS /4 (320 x 480 paisagem) 
+*/
+@media (max-width: 480px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+}
+/* celular 
+5.5" 
+Apple iPhone 6 Plus (414 x 736) 
+J7 Prime
+*/
+@media (max-width: 414px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+	.agile_container {
+		padding: .5em 1em;
+	}	
+}
+/* 
+celulares
+4.7" Google Nexus 4, LG Optimus G (384 x 640),
+4.2" BlackBerry Z10 (384 x 640)
+ */
+@media (max-width: 384px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+}
+/* 4.7" Apple iPhone 6 (375 x 667) */
+@media (max-width: 375px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+}
+/* 
+celulares
+BlackBerry Z30, HTC One, EVO LTE (360 x 640),
+Google Nexus 5, HTC Sensation, Evo 3D (360 x 640)
+5" 
+5.5"
+ */
+@media (max-width: 360px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+	.toggleMenu a {
+		font-size: 13px;
+	}
+	.toggleMenu {
+		padding: 4px 25px;
+	}
+	.w3_agile_nav_main_right {
+		margin-top: -10px;
+	}
+}
+/* -------------------- fim menu -------------------- */
+
+/* -------------------- início barra verde ------------------- */
+.agileinfo_logo{
+	padding: 4.5em 0 .5em;
+    text-align: center;
+    background: #80b03e;
+	font-family:'Hero';
+}
+.agileinfo_logo h1 a{
+	font-size:1.2em;
+	color:#fff;
+	text-decoration:none;
+	position:relative;
+	display: inline-block;
+}
+.agileinfo_logo h1 a span:before,.agileinfo_logo h1 a span:after{
+	content:'';
+	background:url(../images/1.png) no-repeat 0px 0px;
+	display:block;
+	height:32px;
+	width:32px;
+	position:absolute;
+	top:-3%;
+}
+.agileinfo_logo h1 a span:before{
+	left:-25%;
+}
+.agileinfo_logo h1 a span:after{
+	right:-25%;
+}
+.agileinfo_logo h1 a span{
+	display: block;
+    font-size: .3em;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: .7em 0;
+    width: 70%;
+    position: relative;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+.agile_container{
+	padding:.5em 2em;
+}
+
+@media (max-width:768px){
+	.agileinfo_logo h1 a{
+		font-size: 1em;
+	}	
+	.agileinfo_logo h1 a span {
+		width: 80%;
+	}	
+}
+
+@media (max-width: 640px){
+	.agileinfo_logo h1 a{
+		font-size: .8em;
+	}
+}
+
+@media (max-width: 480px){	
+	.agileinfo_logo h1 a{
+		font-size: .8em;
+	}
+	.agileinfo_logo h1 a span:before, .agileinfo_logo h1 a span:after {
+		top: -33%;
+	}
+	.agileinfo_logo {
+		padding: 4.5em 0 0em;
+	}
+}
+
+@media (max-width: 414px){
+	.agile_container {
+		padding: .5em 1em;
+	}
+	
+}
+@media (max-width: 370px){
+	.agileinfo_logo h1{
+		font-size: 1.7em;
+		font-family:'Hero';
+		width:100%;
+	}
+	.agileinfo_logo h1 a span:before {
+		left: -20%;
+	}
+	.agileinfo_logo h1 a span:after {
+		right: -20%;
+	}
+	.agileinfo_logo h1 a span:before, .agileinfo_logo h1 a span:after {
+		background: url(../images/1.png) no-repeat 0px 4px;
+		background-size: 100%;
+		height: 25px;
+		width: 20px;
+		
+	}
+}
+/* -------------------- fim barra verde --------------------- */
+
+/* -------------------- início barra de título --------------------- */
+.breadcrumbs{
+	padding:.5em 0;
+	background:#ededed; 
+}
+.w3layouts_breadcrumbs_left5 ul li {
+	font-size: 12px;
+	list-style-type:none;
+	padding:0.1em 0;
+	font-weight: bold;
+	color:#212121;
+	font-family:'swiss';
+	float:left;
+	width:40%;
+	background:#ffff00;
+	padding-left:0px;
+}
+.w3layouts_breadcrumbs_left6 ul li {
+	font-size: 12px;
+	list-style-type:none;
+	padding:0 0;
+	font-weight:;
+	color:#ff0000;
+	font-family:'swiss';
+	float:right;
+	width:60%;
+	background:#fff000;
+}
+.iframe_data{
+	margin:0px 0px 0px 0px;
+	height:15px;
+	background:;
+}
+
+@media (max-width:1024px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 13px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}	
+}
+
+@media (max-width:768px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 13px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+	.agileinfo_logo h1 a {
+		font-size: 1em;
+	}	
+	.agileinfo_logo h1 a span {
+		width: 80%;
+	}	
+}
+
+@media (max-width:736px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 13px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}	
+}
+
+@media (max-width:667px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 13px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}	
+	.mobile-side-menu ul > li > a {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 640px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 13px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+}
+
+@media (max-width: 600px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 13px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+}
+
+@media (max-width: 568px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 13px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}	
+}
+
+@media (max-width: 480px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 12px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+}
+
+@media (max-width: 414px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 12px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+}
+
+@media (max-width: 384px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 12px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+}
+
+@media (max-width: 375px){
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 12px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+}
+
+@media (max-width: 360px){
+	.breadcrumbs{
+		background:#ededed;
+		text-align:left;
+	}
+	.w3layouts_breadcrumbs_left5 ul li {
+		font-size: 12px;
+		list-style-type:none;
+		padding:0.1em 0;
+		font-weight: bold;
+		color:#212121;
+	}
+	.w3layouts_breadcrumbs_left6 ul li {
+		font-size: 12px;
+		list-style-type:none;
+		padding:0 0;
+		font-weight:;
+		color:#ff0000;
+		font-family:'Hero';
+		float:right;
+	}
+	.iframe_data{
+		margin:1px 0px 0px 0px;
+		height:15px;
+		z-index:999;
+	}
+}
+/* -------------------- fim barra de título ------------------------ */
+
+/* -------------------- início redes sociais ------------------------ */
+.redes_sociais{	
+	background:url(../images/6.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	margin-top:0px;
+	border-bottom:1px solid #000;
+
+}
+.agileits-social-grids {
+	text-align:center;
+
+}
+.agileits-social-grids ul {
+    padding: 0.5em;
+    margin: 0.5em;
+
+}
+.agileits-social-grids ul li {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+}
+.agileits-social-grids ul li a {
+    color: #FFFFFF;
+    text-align: center;
+
+}
+.agileits-social-grids ul li a i.fa {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+	color: #FFFFFF;
+    background: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+
+}
+.agileits-social-grids ul li a i.fa.fa-facebook {
+    border: solid 1px #fff;
+	border-radius: 3px;
+	background:#0e41e2;
+    color: #FFFFFF;	
+}
+.agileits-social-grids ul li a i.fa.fa-instagram {
+    border: solid 1px #fff;
+	border-radius: 3px;
+	background:#a633b4;
+    color: #ffffff;	
+}
+.agileits-social-grids ul li a i.fa.fa-facebook:hover {
+    border: solid 1px #0e41e2;
+	border-radius: 3px;
+	background:transparent;
+    color: #0e41e2;
+}
+.agileits-social-grids ul li a i.fa.fa-instagram:hover{
+    border: solid 1px #a633b4;
+	border-radius: 3px;
+	background:transparent;
+    color: #a633b4;
+}
+
+.font_size{
+	font-family:'Open Sans', sans-serif;
+	font-size:11px;
+	margin-top:5px;
+	
+}
+
+@media (max-width: 640px){
+	
+}
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 360px){
+
+	
+}
+
+/* -------------------- fim redes sociais ------------------------ */
+
+/* -------------------- início copyright ------------------------ */
+.direitos{		
+	text-align:center;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	padding-bottom:0.5em;
+	width:100%;
+	padding-top:0em;		
+}
+
+@media (max-width: 640px){
+	.direitos{
+		font-size:13px;		
+	}
+}
+
+@media (max-width: 480px){
+	.direitos{
+		font-size:11px;
+		color:#fff;
+	}
+}
+
+@media (max-width: 360px){
+	.direitos{
+		font-size:11px;
+		color:#fff;
+	}	
+}
+/* -------------------- fim copyright ------------------------ */
