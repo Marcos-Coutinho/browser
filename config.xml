@@ -18,7 +18,7 @@
 	
 	<preference name="SplashScreen" value="screen" /> 						<!-- screen defaults to "/img/logo.png" -->
 	<preference name="AutoHideSplashScreen" value="true" /> 				<!-- defaults to "true" -->
-	<preference name="SplashScreenDelay" value="3000"/>                     <!-- defaults to "3000" -->
+	<preference name="SplashScreenDelay" value="10000"/>                     <!-- defaults to "3000" -->
     <preference name="FadeSplashScreenDuration" value="1000"/>
 	<preference name="FadeSplashScreen" value="true"/>
 	<preference name="ShowSplashScreenSpinner" value="false"/>
