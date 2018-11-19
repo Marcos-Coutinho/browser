@@ -16,7 +16,7 @@
 	<preference name="StatusBarDefaultScrollToTop" value="false" />
 	<!--<preference name="StatusBarStyle" value="blacktranslucent" /> -->
 	
-	<preference name="SplashScreen" value="www/images/browser.png" /> 						<!-- screen defaults to "/img/logo.png" -->
+	<preference name="SplashScreen" value="screen" /> 						<!-- screen defaults to "/img/logo.png" -->
 	<preference name="AutoHideSplashScreen" value="true" /> 				<!-- defaults to "true" -->
 	<preference name="SplashScreenDelay" value="3000"/>                     <!-- defaults to "3000" -->
     <preference name="FadeSplashScreenDuration" value="1000"/>
