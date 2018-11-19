@@ -16,7 +16,7 @@
 	<preference name="StatusBarDefaultScrollToTop" value="false" />
 	<!--<preference name="StatusBarStyle" value="blacktranslucent" /> -->
 	
-	<preference name="SplashScreen" value="screen" /> 						<!-- defaults to "/img/logo.png" -->
+	<preference name="SplashScreen" value="www/images/browser.png" /> 						<!-- screen defaults to "/img/logo.png" -->
 	<preference name="AutoHideSplashScreen" value="true" /> 				<!-- defaults to "true" -->
 	<preference name="SplashScreenDelay" value="3000"/>                     <!-- defaults to "3000" -->
     <preference name="FadeSplashScreenDuration" value="1000"/>
@@ -37,8 +37,7 @@
     </plugin>
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.1" />
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-	
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />	
 	<plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
     <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0" />
 	
